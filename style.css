@@ -99,6 +99,9 @@ main {
     display: flex;
     align-items: flex-end;
 }
+    .chart-maturity.chart-display {
+        height: 370px;
+    }
 
 .chart-maturity .bar {
     position: relative;
@@ -124,6 +127,9 @@ main {
     .bar:hover .bar-selector {
         display: block;
     }
+        .chart-display .bar:hover .bar-selector{
+            display:none;
+        }
 
     .bar.selected .bar-selector {
         display: block;
@@ -151,6 +157,12 @@ main {
         font-size: 16px;
         line-height: 120%;
     }
+        .chart-display .bar-label {
+            font-size: 12px;
+            font-weight: 400;
+            left: 5px;
+            bottom: 5px;
+        }
 
     .bar.bar-1 {
         /* height: 40%; */
@@ -181,6 +193,22 @@ main {
         height: 40%;
         background: rgba(90,157,40,1);
     }
+        .chart-display .bar.bar-1 {
+            height: 20%;
+        }
+        .chart-display .bar.bar-2 {
+            height: 30%;
+        }
+        .chart-display .bar.bar-3 {
+            height: 40%;
+        }
+        .chart-display .bar.bar-4 {
+            height: 50%;
+        }
+        .chart-display .bar.bar-5 {
+            height: 60%;
+        }
+
 
 .bell-curve {
     /* background: #cfcfcf; */
@@ -341,4 +369,11 @@ main {
 .action-card .card-body {
     display:flex;
     flex-direction: column;
+}
+
+.action-header {
+    background: #8BAEFE;
+    color: #ffffff;
+    text-align: center;
+    line-height: 400%;
 }

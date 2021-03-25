@@ -47,10 +47,10 @@
                 <li>Share your results and analysis</li>
             </ul>
         </div>
-        <div class="p-4"></div>
+        <div class="p-3"></div>
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col">
                     <div class="card">
                         <h5 class="card-header">Your Profile</h5>
                         <div class="card-body">
@@ -99,8 +99,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5">
-                    <div class="card">
+            </div>
+            <div class="p-4"></div>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="min-height:420px;">
                         <h5 class="card-header">Your Corporate Innovation Maturity Level</h5>
                         <div class="card-body">
                             <img src="" id="report-mature-hero" />
@@ -111,21 +114,57 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <h5 class="card-header">Your Total Score</h5>
-                        <div class="card-body">
-                            <span class="text-ss">This graph shows your score benchmarking with your industry average and your pre-assessment result.</span>
-                            <div class="p-2"></div>
-                            <div class="bell-curve">
-                                <div class="bell-line bell-industry">
-                                    <span>Industry Average</span>
+                        <h5 class="card-header">Innovation Maturity</h5>
+                        <div class="chart-maturity chart-display">
+                            <div class="bar bar-1" data="1">
+                                <div class="bar-score">
+                                    <img src="images/level1.png" />
                                 </div>
-                                <div class="bell-line bell-perception">
-                                    <span>Your Perception</span>
+                                <div class="bar-label">Level 1<br/>NewComer</div>
+                                <div class="bar-selector">
+                                    <i class="fas fa-chevron-circle-up"></i>
+                                    <br/>Select this
                                 </div>
-                                <div class="bell-line bell-score text-right js-your-bellscore">
-                                    <span>Your Score</span>
+                            </div>
+                            <div class="bar bar-2" data="2">
+                                <div class="bar-score">
+                                    <img src="images/level2.png" />
                                 </div>
-                                <img src="images/bell-curve.png" />
+                                <div class="bar-label">Level 2<br/>Explorer</div>
+                                <div class="bar-selector">
+                                    <i class="fas fa-chevron-circle-up"></i>
+                                    <br/>Select this
+                                </div>
+                            </div>
+                            <div class="bar bar-3" data="3">
+                                <div class="bar-score">
+                                    <img src="images/level3.png" />
+                                </div>
+                                <div class="bar-label">Level 3<br/>Challenger</div>
+                                <div class="bar-selector">
+                                    <i class="fas fa-chevron-circle-up"></i>
+                                    <br/>Select this
+                                </div>
+                            </div>
+                            <div class="bar bar-4" data="4">
+                                <div class="bar-score">
+                                    <img src="images/level4.png" />
+                                </div>
+                                <div class="bar-label">Level 4<br/>Practitioner</div>
+                                <div class="bar-selector">
+                                    <i class="fas fa-chevron-circle-up"></i>
+                                    <br/>Select this
+                                </div>
+                            </div>
+                            <div class="bar bar-5" data="5">
+                                <div class="bar-score">
+                                    <img src="images/level5.png" />
+                                </div>
+                                <div class="bar-label">Level 5<br/>Champion</div>
+                                <div class="bar-selector">
+                                    <i class="fas fa-chevron-circle-up"></i>
+                                    <br/>Select this
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -137,6 +176,27 @@
             <div class="row">
                 <div class="col">
                     <div class="card">
+                        <h5 class="card-header">Your Total Score</h5>
+                        <div class="card-body">
+                            <span class="text-ss">This graph shows your score benchmarking with your industry average and your pre-assessment result.</span>
+                            <div class="p-2"></div>
+                            <div class="bell-curve">
+                                <div class="bell-line bell-industry">
+                                    <span>Industry Average</span>
+                                </div>
+                                <div class="bell-line bell-perception">
+                                    <span>Your Pre-assessment</span>
+                                </div>
+                                <div class="bell-line bell-score text-right js-your-bellscore">
+                                    <span>Your Score</span>
+                                </div>
+                                <img src="images/bell-curve.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
                         <h5 class="card-header">Your Score on 6-Factor Model</h5>
                         <div class="card-body">
                             <span class="text-ss">This 6-Factor Model visualizes your score on each 6 essential factors for driving corporate innovation.</span>
@@ -145,7 +205,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+            </div>
+            <div class="row">
+                <div class="p-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-6">
                     <div class="card">
                         <h5 class="card-header">Your Innovation Aptitude</h5>
                         <div class="card-body">
@@ -161,16 +226,6 @@
             </div>
             <div class="row">
                 <img src="" id="report-detail-score" style="margin:auto;"/>
-            </div>
-            <div class="p-3"></div>
-            <div class="container text-center">
-                <p style="width:80%;margin:auto;">
-                    You are currently the only person representing your company. <br/>The result will be even more precisive if you invite more people to complete this assessment.
-                </p>
-            </div>
-            <div class="p-4"></div>
-            <div class="container text-center">
-                <img src="images/bias.png" width="45%" />
             </div>
         </div>
     </main>
