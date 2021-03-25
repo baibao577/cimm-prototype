@@ -122,11 +122,13 @@ $(function() {
                 let sixFactors = result.sixfactors.image_id;
                 let typeInnovation = result.typeinnovation.image_id;
                 let detailScore = result.detailscore.image_id;
+                let recScore = result.recommendation.image_id;
 
                 $("#report-mature-hero").attr("src",`${gdrive}${matureHero}`);
                 $("#report-six-factors").attr("src",`${gdrive}${sixFactors}`);
                 $("#report-type-innovation").attr("src",`${gdrive}${typeInnovation}`);
                 $("#report-detail-score").attr("src",`${gdrive}${detailScore}`);
+                $("#report-rec").attr("src",`${gdrive}${recScore}`);
             }
         });
     }
