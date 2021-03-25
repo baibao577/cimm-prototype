@@ -78,13 +78,17 @@ $(function() {
         $("#industry").html(userProfile.profile.industry);
     }
 
+    function getRndInteger(min, max) {
+        return Math.floor(Math.random() * (max - min) ) + min;
+      }
+
     // Import to report
     if($('#page-report').length){
         console.log('report!');
 
-        var bellscore = Math.floor(Math.random() * 100);
+        var bellscore = getRndInteger(30, 48);
 
-        $(".js-your-bellscore").css("left", bellscore)
+        $(".js-your-bellscore").css("left", `${bellscore}%`)
 
         $.ajax({
             url: "http://demo9942192.mockable.io/result",

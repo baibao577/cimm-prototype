@@ -9,10 +9,24 @@ body {
     font-weight: 700;
 }
 
+.text-s{
+    font-size: 15px;
+}
+
+
+ul li {
+    margin-bottom: 15px;
+}
+
 h1,
 h2,
-h3 {
+h3,
+h5 {
     font-family: 'Bitter';
+}
+
+h5 {
+    font-weight: 600;
 }
 
 img {
