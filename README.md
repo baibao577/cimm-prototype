@@ -11,6 +11,14 @@ x Bell curve plot
 - pull data to do report
 - Recommendation
 
+
+- Footer all Q
+- Validattion on PRE ASSEss
+- Add Barchart back to result
+- Slider add arrrow above it
+- Result content
+- precision move to report
+
 http://demo9942192.mockable.io/result
 {
     "maturity": {

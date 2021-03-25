@@ -61,8 +61,26 @@ $(function() {
 
         console.log(userProfile);
 
+        if(profile.position == undefined || profile.position.length == 0) {
+            let r = confirm("Please fill in your detail");
+            if (r == true) {
+                return false;
+            } else {
+                return false;
+            }
+        }
+
+        if(userProfile.maturity == undefined) {
+            let r = confirm("Please select your innovation maturity");
+            if (r == true) {
+                return false;
+            } else {
+                return false;
+            }
+        }
+
         setTimeout(function() {
-            window.location.href = "https://rise-global.typeform.com/to/QshGju14";
+            window.location.href = "dashboard.html";
         }, 500);
     });
 
