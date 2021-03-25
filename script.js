@@ -91,7 +91,7 @@ $(function() {
         $(".js-your-bellscore").css("left", `${bellscore}%`)
 
         $.ajax({
-            url: "http://demo9942192.mockable.io/result",
+            url: "https://demo9942192.mockable.io/result",
             success: function(result){
                 // $("#display-json").html(
                 //     JSON.stringify(result, null, 4)
