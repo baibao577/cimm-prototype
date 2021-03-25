@@ -33,6 +33,11 @@ $(function() {
         $(".js-chart-maturity .bar").removeClass("selected");
         $(this).addClass("selected");
         userProfile.maturity = maturity;
+
+        $(".js-chart-maturity .bar:not(.selected)").css("opacity", "0.2");
+        setTimeout(function() {
+            $(".js-chart-maturity .bar.selected").css("opacity", "1");
+        }, 100);
         
 
         localStorage.setItem("userprofile", 
