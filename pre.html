@@ -32,19 +32,16 @@
     </header>
     <main>
         <div class="container">
-            <h1 class="page-title">Pre assessment</h1>
+            <h1 class="page-title">Pre-assessment Survey  
+            </h1>
         </div>
-        <div class="container">
-            <div class="row">
-                <pre>
-                    - company information
-                    - your perception (Maturity)
-                </pre>
-            </div>
-        </div>
+        <div class="p-4"></div>
         <div class="container">
             <div class="row">
                 <div class="col-3">
+                    <p>
+                        <b>Please fill in the following information:</b>
+                    </p>
                     <form id="userprofile">
                         <div class="form-group">
                             <label>Name</label>
@@ -70,9 +67,16 @@
                 </div>
 
                 <div class="col">
+                    <p>
+                        <b>
+                        In your view, which innovation maturity level do you think your organization are <u>currently</u> in? <br/>Please click to select</b>
+                    </p>
+                    <div class="p-1"></div>
                     <div class="chart-maturity js-chart-maturity">
                         <div class="bar bar-1" data="1">
-                            <div class="bar-score">0 - 13</div>
+                            <div class="bar-score">
+                                <img src="images/level1.png" />
+                            </div>
                             <div class="bar-label">Level 1<br/>NewComer</div>
                             <div class="bar-selector">
                                 <i class="fas fa-chevron-circle-up"></i>
@@ -80,7 +84,9 @@
                             </div>
                         </div>
                         <div class="bar bar-2" data="2">
-                            <div class="bar-score">31 - 45</div>
+                            <div class="bar-score">
+                                <img src="images/level2.png" />
+                            </div>
                             <div class="bar-label">Level 2<br/>Explorer</div>
                             <div class="bar-selector">
                                 <i class="fas fa-chevron-circle-up"></i>
@@ -88,7 +94,9 @@
                             </div>
                         </div>
                         <div class="bar bar-3" data="3">
-                            <div class="bar-score">46 - 60</div>
+                            <div class="bar-score">
+                                <img src="images/level3.png" />
+                            </div>
                             <div class="bar-label">Level 3<br/>Challenger</div>
                             <div class="bar-selector">
                                 <i class="fas fa-chevron-circle-up"></i>
@@ -96,7 +104,9 @@
                             </div>
                         </div>
                         <div class="bar bar-4" data="4">
-                            <div class="bar-score">61 - 75</div>
+                            <div class="bar-score">
+                                <img src="images/level4.png" />
+                            </div>
                             <div class="bar-label">Level 4<br/>Practitioner</div>
                             <div class="bar-selector">
                                 <i class="fas fa-chevron-circle-up"></i>
@@ -104,7 +114,9 @@
                             </div>
                         </div>
                         <div class="bar bar-5" data="5">
-                            <div class="bar-score">76 - 90</div>
+                            <div class="bar-score">
+                                <img src="images/level5.png" />
+                            </div>
                             <div class="bar-label">Level 5<br/>Champion</div>
                             <div class="bar-selector">
                                 <i class="fas fa-chevron-circle-up"></i>
@@ -114,9 +126,18 @@
                     </div>
                     <div>
                         <div style="height:80px;"></div>
-                        <p>
-                            Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini. 
-                        </p>
+                        <ul class="text-ss small-list">
+                            <li>NEWCOMER: Being aware of the need to innovate but have significant reluctance to change across the organization. </li>
+                            <li>EXPLORER: Experimenting various innovation approaches but still have limited innovation experience and know-how.
+                            </li>
+                            <li>CHALLENGER: Establishing internal corporate innovation capability as well as processes and governance in the organization.
+                            </li>
+                            <li>PRACTITIONER: Launching an initial set of innovation-driven products and services. 
+                            </li>
+                            <li>
+                                CHAMPION: Consistently succeeding in generating substantial business results through disruptive innovation.
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -126,7 +147,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="footer-nav">
-                <a href="dashboard.html" class="btn btn-primary">Prev</a>
+                <a href="dashboard.html" class="btn btn-link">Prev</a>
                 &nbsp;&nbsp;
                 <a href="#typeform" class="btn btn-primary btn-success js-next-pre">Next Step&nbsp;&nbsp;<i class="fas fa-chevron-circle-right"></i></a>
             </div>
