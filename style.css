@@ -100,7 +100,7 @@ main {
     align-items: flex-end;
 }
     .chart-maturity.chart-display {
-        height: 370px;
+        height: 280px;
     }
 
 .chart-maturity .bar {
