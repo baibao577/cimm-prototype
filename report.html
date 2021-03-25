@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<title>CIMM - RISE</title>
+</head>
+<body id="page-report">
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col logo">
+                    <img src="images/rise_logo.png">
+                </div>
+                <div class="col menu">
+                    <!-- posibly menu here -->
+                </div>
+            </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="page-title">Result</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <pre>
+                    - company information
+                    - score (image)
+                    - maturity (code)
+                    - bellcurve (code)
+                    - spider (image)
+                    - aptitude (image)
+                    - factor (image)
+                    - Bias (image)
+                </pre>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <h5 class="card-header">Your Profile</h5>
+                        <div class="card-body">
+                            <div id="js-report-userprofile">
+                                <div class="row">
+                                    <div class="col">
+                                    Name:
+                                    </div>
+                                    <div class="col">
+                                        <span id="name"></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        Position:
+                                    </div>
+                                    <div class="col">
+                                        <span id="position"></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        Department:
+                                    </div>
+                                    <div class="col">
+                                        <span id="department"></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        Company:
+                                    </div>
+                                    <div class="col">
+                                        <span id="company"></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        Industry:
+                                    </div>
+                                    <div class="col">
+                                        <span id="industry"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="card">
+                        <h5 class="card-header">Marturity Hero</h5>
+                        <div class="card-body">
+                            <img src="" id="report-mature-hero" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="p-3"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <h5 class="card-header">Total score</h5>
+                        <div class="card-body">
+                            <div class="bell-curve">
+                                <div class="bell-line bell-industry">
+                                    <span>Industry Average</span>
+                                </div>
+                                <div class="bell-line bell-perception">
+                                    <span>Your Perception</span>
+                                </div>
+                                <div class="bell-line bell-score text-right js-your-bellscore">
+                                    <span>Your Score</span>
+                                </div>
+                                <img src="images/bell-curve.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <h5 class="card-header">6 Factors</h5>
+                        <div class="card-body">
+                            <img src="" id="report-six-factors" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <h5 class="card-header">Type of innovation</h5>
+                        <div class="card-body">
+                            <img src="" id="report-type-innovation" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="p-3"></div>
+            </div>
+            <div class="row">
+                <img src="" id="report-detail-score" />
+            </div>
+            <div class="row">
+                <div class="p-4"></div>
+            </div>
+            <div class="row">
+                <div class="p-4"></div>
+            </div>
+        </div>
+    </main>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="footer-nav">
+                <a href="pre.html" class="btn btn-primary">Prev</a>
+                &nbsp;&nbsp;
+                <a href="recommend.html" class="btn btn-primary btn-success">Next Step&nbsp;&nbsp;<i class="fas fa-chevron-circle-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div></div>
+
+    <!-- #region JS -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="script.js" crossorigin="anonymous"></script>
+    <!-- #endregion JS -->
+</body>
+</html>
