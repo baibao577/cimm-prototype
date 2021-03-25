@@ -124,6 +124,10 @@ main {
         display: none;
     }
 
+    .bar:hover {
+        opacity: 1;
+    }
+
     .bar:hover .bar-selector {
         display: block;
     }
@@ -133,6 +137,7 @@ main {
 
     .bar.selected .bar-selector {
         display: block;
+        opacity: 1;
     }
 
     .bar-score {

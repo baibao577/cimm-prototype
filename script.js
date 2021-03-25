@@ -38,6 +38,8 @@ $(function() {
         localStorage.setItem("userprofile", 
                                 JSON.stringify(userProfile));
         
+        // $(".js-chart-maturity .bar:not(.selected)").css("opacity", "0.5");
+        
         console.log(userProfile);
     });
 
@@ -130,11 +132,14 @@ $(function() {
     }
 });
 
+
+let sliderTrigger = false;
 $(document).on('#slider change', '#slider', function() {
     let sliderval = $(this).val() ;
-    console.log();
+    console.log(sliderval);
     $("#rec1, #rec2, #rec3").hide();
 
+    sliderTrigger = true;
     if (sliderval == 0) {
         $("#rec1").fadeIn();
     }
@@ -144,4 +149,22 @@ $(document).on('#slider change', '#slider', function() {
     else if (sliderval == 2) {
         $("#rec3").fadeIn();
     }
+});
+
+
+$(".js-rec-next").click(function(event){
+    event.stopImmediatePropagation();
+
+    if (sliderTrigger == false) {
+        let r = confirm("Please drag the slider to see current innovation-related focus");
+            if (r == true) {
+                return false;
+            } else {
+                return false;
+            }
+    }
+
+    setTimeout(function() {
+        window.location.href = "action.html";
+    }, 500);
 });
