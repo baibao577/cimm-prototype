@@ -107,3 +107,19 @@ $(function() {
         });
     }
 });
+
+$(document).on('#slider change', '#slider', function() {
+    let sliderval = $(this).val() ;
+    console.log();
+    $("#rec1, #rec2, #rec3").hide();
+
+    if (sliderval == 0) {
+        $("#rec1").fadeIn();
+    }
+    else if (sliderval == 1) {
+        $("#rec2").fadeIn();
+    }
+    else if (sliderval == 2) {
+        $("#rec3").fadeIn();
+    }
+});
