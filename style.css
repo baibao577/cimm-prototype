@@ -18,6 +18,10 @@ ul li {
     margin-bottom: 15px;
 }
 
+ul.small-list li {
+    margin-bottom: 5px;
+}
+
 h1,
 h2,
 h3,
@@ -307,3 +311,12 @@ main {
     background: #3071A9;
     }
   
+
+.action-card {
+    min-height: 520px;
+}
+
+.action-card .card-body {
+    display:flex;
+    flex-direction: column;
+}
