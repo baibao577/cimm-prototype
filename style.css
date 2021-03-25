@@ -236,7 +236,7 @@ main {
     }
     .bell-perception {
         border-left: dotted 4px green;
-        left: 60%;
+        left: 40%;
     }
     .bell-score {
         border-left: solid 4px red;
