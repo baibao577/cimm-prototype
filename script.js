@@ -139,29 +139,28 @@ $(function() {
             }
         });
     }
-});
 
 
-let sliderTrigger = false;
-$(document).on('#slider change', '#slider', function() {
-    let sliderval = $(this).val() ;
-    console.log(sliderval);
-    $("#rec1, #rec2, #rec3").hide();
+    let sliderTrigger = false;
+    $(document).on('#slider change', '#slider', function() {
+        let sliderval = $(this).val() ;
+        console.log(sliderval);
+        $("#rec1, #rec2, #rec3").hide();
 
-    sliderTrigger = true;
-    if (sliderval == 0) {
-        $("#rec1").fadeIn();
-    }
-    else if (sliderval == 1) {
-        $("#rec2").fadeIn();
-    }
-    else if (sliderval == 2) {
-        $("#rec3").fadeIn();
-    }
-});
+        sliderTrigger = true;
+        if (sliderval == 0) {
+            $("#rec1").fadeIn();
+        }
+        else if (sliderval == 1) {
+            $("#rec2").fadeIn();
+        }
+        else if (sliderval == 2) {
+            $("#rec3").fadeIn();
+        }
+    });
 
 
-$(".js-rec-next").click(function(event){
+    $(".js-rec-next").click(function(event){
     event.stopImmediatePropagation();
 
     if (sliderTrigger == false) {
@@ -176,4 +175,17 @@ $(".js-rec-next").click(function(event){
     setTimeout(function() {
         window.location.href = "action.html";
     }, 500);
+    });
+
+
+    let popup2 = window.typeformEmbed.makePopup('https://rise-global.typeform.com/to/rPAro91m', {
+        hideHeaders: true,
+        hideFooter: true
+    });
+
+    $('.js-exit-button').click(function() {
+        console.log('exit');
+        popup2.open();
+    });
 });
+
